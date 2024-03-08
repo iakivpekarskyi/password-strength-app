@@ -5,8 +5,10 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './password-strength.component.html',
-  styleUrl: './password-strength.component.scss'
+  styleUrl: './password-strength.component.scss',
 })
 export class PasswordStrengthComponent {
-
+  checkPasswordStrength() {
+    // logic to check password strength
+  }
 }
