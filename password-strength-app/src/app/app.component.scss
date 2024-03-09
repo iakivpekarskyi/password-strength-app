@@ -1,12 +1,13 @@
 .section {
-  background-color: azure;
+  background-color: rgb(42, 42, 42);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.app-wrapper {
-  text-align: center;
-  padding: 20px;
+h1 {
+  font-family: "Mynerve";
+  font-size: 3rem;
+  color: white;
 }
