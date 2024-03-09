@@ -12,7 +12,6 @@ import { FormsModule } from '@angular/forms';
 export class PasswordStrengthComponent {
   password: string = '';
   passwordStrength = ['gray', 'gray', 'gray'];
-  inputBorderColor: string = 'gray';
 
   checkPasswordStrength() {
     const length = this.password.length;
@@ -43,12 +42,10 @@ export class PasswordStrengthComponent {
         this.passwordStrength = ['red', 'gray', 'gray'];
         break;
     }
-    this.inputBorderColor = this.passwordStrength[1];
   }
 
   resetPassword() {
     this.password = '';
     this.passwordStrength = ['gray', 'gray', 'gray'];
-    this.inputBorderColor = 'gray';
   }
 }
