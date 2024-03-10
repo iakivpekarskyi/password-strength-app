@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 export class PasswordStrengthComponent {
   password: string = '';
   passwordStrength = ['gray', 'gray', 'gray'];
+  visible: boolean = true;
+  changetype: boolean = true;
 
   checkPasswordStrength() {
     const length = this.password.length;
@@ -47,5 +49,10 @@ export class PasswordStrengthComponent {
   resetPassword() {
     this.password = '';
     this.passwordStrength = ['gray', 'gray', 'gray'];
+  }
+
+  viewpass() {
+    this.visible = !this.visible;
+    this.changetype = !this.changetype;
   }
 }
